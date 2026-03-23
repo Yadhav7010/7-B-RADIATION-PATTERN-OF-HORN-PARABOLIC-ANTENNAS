@@ -1,3 +1,4 @@
+
 # 7-B-RADIATION-PATTERN-OF-HORN-PARABOLIC-ANTENNAS
 
 **Aim:**
@@ -54,45 +55,86 @@ In our above example suppose operating frequency is 9GHZ λ0=3.33CM.where c is v
 7.	convert g into dB in above exampleG dB =10LOG318=15.02DB
 8.	the same setup can be used for other frequency of operation.
 
-9.	The NIST Microwave Uncertainty Framework (MUF) is used to process all of the measurements. The MUF utilizes parallel sensitivity and Monte-Carlo analyses and enables us to capture and propagate the significant scattering parameters measurement uncertainties and statistical correlations between them. By identifying and modeling the physical error mechanisms in the calibration standards, we can determine the statistical correlations between both the scattering-parameters at a single frequency and uncertainties at different frequencies.
-
-The existing SOLT calibration process uses two different types of loads. If frequencies above 2 GHz are being used, a sliding load is used. The sliding load is not used because the fixed load is used below 2 GHz and above 2 GHz. For the new method, necessary because the sliding load was loads do not have a flat response across a broad frequency band. By measuring the response of the fixed load, any deviations from a flat response are accounted for and corrected. For the new technique, the fixed load is used across the entire frequency band.
-
-
-
-
 **BLOCK DIAGRAM:**
 
 <img width="638" height="177" alt="image" src="https://github.com/user-attachments/assets/0e3f554a-c54b-42a4-bc48-1c3b3dd5f5fc" />
 
+
 **TABULATION:** 
-<img width="356" height="495" alt="image" src="https://github.com/user-attachments/assets/44eeed49-9489-4021-a7ab-5a75e156abdd" />
-<img width="409" height="580" alt="image" src="https://github.com/user-attachments/assets/8e5259df-4aa4-4246-bab0-ce2410c476d7" />
+
+**HORN ANTENNA** 
+
+| Parameter | Symbol | Measurement | Remarks |
+| :--- | :---: | :--- | :--- |
+| Beam Voltage | $V_{b}$ | 8.5 V | From Gunn power supply |
+| Beam Current | $I_{b}$ | 320 mA | Measured current |
+| Repeller Voltage | $V_{r}$ | $-2.8$ V | Stable oscillation point |
+| Frequency | $f$ | 9 GHz | Measured operating frequency |
+| Distance between antennas | $S$ | 150 cm | Physical spacing |
+| Wavelength | $\lambda$ | 3.33 cm | $\lambda = c/f$ |
+| 3 dB Beamwidth | --- | $32^\circ$ | From radiation plot |
+| Gain | dB | 15 dB | Calculated from gain equation |
 
 
+**PARABOLIC ANTENNA**
+
+| Parameter | Symbol | Measurement | Remarks |
+| :--- | :---: | :--- | :--- |
+| Beam Voltage | $V_{b}$ | 8.5 V | From Gunn power supply |
+| Beam Current | $I_{b}$ | 320 mA | Same as horn setup |
+| Repeller Voltage | $V_{r}$ | $-2.8$ V | Stable oscillation point |
+| Frequency | $f$ | 9 GHz | Operating frequency |
+| Distance between antennas | $S$ | 150 cm | Same measurement distance |
+| Wavelength | $\lambda$ | 3.33 cm | $\lambda = c/f$ |
+| 3 dB Beamwidth | --- | $12^\circ$ | From polar plot |
+| Gain | dB | 22 dB | Calculated from gain equation |
 
 
+**OBSERVATION TABLE** 
+
+**Radiation Pattern of Horn Antenna**
+
+| Angle ($^\circ$) | VSWR (dB) | Relative Power (dB) |
+| :---: | :---: | :---: |
+| -50 | 10.5 | -9.0 |
+| -40 | 8.0 | -7.0 |
+| -30 | 5.0 | -5.0 |
+| -20 | 3.0 | -3.0 |
+| -10 | 1.5 | -1.5 |
+| 0 | 0.0 | 0.0 |
+| +10 | 1.5 | -1.5 |
+| +20 | 3.0 | -3.0 |
+| +30 | 5.0 | -5.0 |
+| +40 | 8.0 | -7.0 |
+| +50 | 10.5 | -9.0 |
+
+$\rightarrow$ 3 dB Beamwidth $\approx$ 32 degree
 
 
+**Radiation Pattern of Parabolic Antenna**
 
+| Angle ($^\circ$) | VSWR (dB) | Relative Power (dB) |
+| :---: | :---: | :---: |
+| -40 | 15.0 | -12.0 |
+| -30 | 10.0 | -9.0 |
+| -20 | 4.0 | -4.0 |
+| -10 | 1.5 | -1.5 |
+| 0 | 0.0 | 0.0 |
+| +10 | 1.5 | -1.5 |
+| +20 | 4.0 | -4.0 |
+| +30 | 10.0 | -9.0 |
+| +40 | 15.0 | -12.0 |
 
-**PARABOLICANTENNA**
-
-Beam width of Parabolic antenna 20 degree
-	
+$\rightarrow$ 3 dB Bandwidth $\approx$ 12 degree
 
 **RESULT:**
 
-Thus the polar pattern and the gain of a  parabolicantenna was measured and plotted.
+Thus the polar pattern and the gain of a waveguide horn antenna and parabolicantenna was measured and plotted.
 
+Beamwidth of horn antenna : 32 degree
 
-Beamwidth of parabolic antenna:	20*	
+Beamwidth of parabolic antenna: 12 degree
 
-## CONCLUSION
+Gain (dB) of horn antenna : 15
 
-A new technique has been described that was microwane Uncutainty Framework to establish au determined with well-defined tranceablity parth for soL7 calibrations In addition, measurments results Correlated uncutaints. Repeated parses through the procus Yeilded repeatable magnitude and phaSE is measured.
-
-
-
-
-
+Gain (dB) of parabolic antenna: 22
